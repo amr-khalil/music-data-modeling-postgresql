@@ -78,6 +78,9 @@ Description: timestamps of records in songplays broken down into specific units.
 - `year`
 - `weekday`
 
+
+[](erm.png)
+
 ## Project Structure
 The project includes six files:
 - **sql_queries.py**: contains all your sql queries, and is imported into the last three files above.
