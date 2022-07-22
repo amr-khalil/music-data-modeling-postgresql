@@ -2,7 +2,6 @@
 
 ETL pipeline for music data using Python and PostgreSQL.
 
-
 ## Introduction
 A startup called **Sparkify** wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
 
@@ -29,6 +28,10 @@ log_data/2018/11/2018-11-13-events.json
 
 ## Schema for Song Play Analysis
 Using the song and log datasets, you'll need to create a star schema optimized for queries on song play analysis. This includes the following tables.
+
+### ERM Model
+![alt erm](erm.png)
+
 
 ### Fact Table
 #### songplays
@@ -77,9 +80,6 @@ Description: timestamps of records in songplays broken down into specific units.
 - `month`
 - `year`
 - `weekday`
-
-
-![Image](erm.png)
 
 ## Project Structure
 The project includes six files:
