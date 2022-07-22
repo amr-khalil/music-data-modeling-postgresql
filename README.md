@@ -2,13 +2,6 @@
 
 ETL pipeline for music data using Python and PostgreSQL.
 
-Discuss the purpose of this database in the context of the startup, Sparkify, and their analytical goals.
-How to run the Python scripts
-An explanation of the files in the repository
-State and justify your database schema design and ETL pipeline.
-[Optional] Provide example queries and results for song play analysis.
-Here's a https://www.markdownguide.org/basic-syntax/guide on Markdown Syntax.*
-
 
 ## Introduction
 A startup called **Sparkify** wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding what songs users are listening to. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
