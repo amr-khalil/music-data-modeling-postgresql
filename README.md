@@ -12,8 +12,8 @@ They'd like a data engineer to create a **Postgres database** with tables design
 ## Song Dataset
 The first dataset is a subset of real data from the [Million Song Dataset](http://millionsongdataset.com/). Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are file paths to two files in this dataset.
 
-  song_data/A/B/C/TRABCEI128F424C983.json
-  song_data/A/A/B/TRAABJL12903CDCF1A.json
+`song_data/A/B/C/TRABCEI128F424C983.json
+song_data/A/A/B/TRAABJL12903CDCF1A.json`
 
 
 ## Log Dataset
@@ -30,25 +30,56 @@ Using the song and log datasets, you'll need to create a star schema optimized f
 
 ### Fact Table
 #### songplays
-- records in log data associated with song plays i.e. records with page NextSong
-- songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+Description: records in log data associated with song plays i.e. records with page NextSong.
+Fields:
+- songplay_id
+- start_time
+- user_id
+- level
+- song_id
+- artist_id
+- session_id
+- location
+- user_agent
  
 ### Dimension Tables
 #### users
-- users in the app
-- user_id, first_name, last_name, gender, level
+Description: users in the app.
+Fields:
+- user_id
+- first_name
+- last_name
+- gender
+- level
 
 #### songs
-- songs in music database
-- song_id, title, artist_id, year, duration
+Description: songs in music database.
+Fields:
+- song_id
+- title
+- artist_id
+- year
+- duration
 
 #### artists
-- artists in music database
-- artist_id, name, location, latitude, longitude
+Description: artists in music database.
+Fields:
+- artist_id
+- name
+- location
+- latitude
+- longitude
 
 #### time 
-- timestamps of records in songplays broken down into specific units
-- start_time, hour, day, week, month, year, weekday
+Description: timestamps of records in songplays broken down into specific units.
+Fields:
+- start_time
+- hour
+- day
+- week
+- month
+- year
+- weekday
 
 ## Project Structure
 The project includes six files:
@@ -62,6 +93,6 @@ The project includes six files:
 ## Project Steps
 **NOTE**: You will not be able to run test.ipynb, etl.ipynb, or etl.py until you have run create_tables.py at least once to create the sparkifydb database, which these other files connect to.
 
-- Create Tables: `> python create_tables.py`
-- Build ETL Pipeline: `> python etl.py`
-- Run Sanity Tests: open test.ipynb
+- Create Tables: `python create_tables.py`
+- Build ETL Pipeline: `python etl.py`
+- Run Sanity Tests: open and run test.ipynb using jupyter notebook
