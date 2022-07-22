@@ -79,7 +79,7 @@ Description: timestamps of records in songplays broken down into specific units.
 - `weekday`
 
 
-[Image](erm.png)
+![Image](erm.png)
 
 ## Project Structure
 The project includes six files:
